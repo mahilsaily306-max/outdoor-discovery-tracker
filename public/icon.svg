@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1712"/>
+      <stop offset="100%" stop-color="#04120a"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Rounded Square Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Ambient Glow Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#glowGrad)" stroke-width="4"/>
+  
+  <!-- Compass Cardinal Ring -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#163824" stroke-width="2" stroke-dasharray="6 12"/>
+  <circle cx="256" cy="96" r="4" fill="#34d399"/>
+  <circle cx="256" cy="416" r="4" fill="#10b981"/>
+  <circle cx="96" cy="256" r="4" fill="#10b981"/>
+  <circle cx="416" cy="256" r="4" fill="#10b981"/>
+
+  <!-- Stylized Organic Leaf / Compass Needle -->
+  <path d="M 256 120 
+           C 340 180, 360 280, 310 350
+           C 270 400, 240 400, 202 350
+           C 152 280, 172 180, 256 120 Z" 
+        fill="url(#leafGrad)"/>
+        
+  <!-- Leaf Stem / Vein -->
+  <path d="M 256 140 Q 256 270 230 380" 
+        fill="none" stroke="#042a17" stroke-width="8" stroke-linecap="round"/>
+        
+  <!-- Side Vein Left -->
+  <path d="M 254 220 Q 215 235 195 210" 
+        fill="none" stroke="#042a17" stroke-width="5" stroke-linecap="round"/>
+        
+  <!-- Side Vein Right -->
+  <path d="M 254 270 Q 295 285 310 260" 
+        fill="none" stroke="#042a17" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Compass Star Center Accent -->
+  <polygon points="256,230 264,248 282,256 264,264 256,282 248,264 230,256 248,248" fill="#d1fae5"/>
+</svg>
